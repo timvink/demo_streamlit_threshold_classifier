@@ -57,7 +57,7 @@ def train_model(X, y):
             )
         ]
     )
-    
+
     # Very small grid for demo purpose only
     grid = {"rf__max_depth": [4, 7]}
 

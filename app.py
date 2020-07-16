@@ -9,6 +9,7 @@ from vizualization import plot_probability_distribution
 def cached_get_predictions():
     return get_predictions()
 
+
 y_train, yhat_prob_train, y_test, yhat_prob_test = cached_get_predictions()
 
 # UI
@@ -23,8 +24,12 @@ metrics = get_metrics_df(
 st.dataframe(metrics.assign(hack="").set_index("hack"))
 
 # Plots
-ax = plot_probability_distribution(yhat_prob_train, y_train, threshold, "Train predictions")
+ax = plot_probability_distribution(
+    yhat_prob_train, y_train, threshold, "Train predictions"
+)
 st.pyplot(optimize=True)
 
-ax = plot_probability_distribution(yhat_prob_test, y_test, threshold, "Test predictions")
+ax = plot_probability_distribution(
+    yhat_prob_test, y_test, threshold, "Test predictions"
+)
 st.pyplot(optimize=True)

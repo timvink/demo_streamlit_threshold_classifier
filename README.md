@@ -15,14 +15,14 @@ We then train a simple `RandomForestClassifier` model on the train set, using a 
 
 ## App
 
-To set the threshold for our classifier dynamically, run the app with
+To set the threshold for our classifier dynamically, run the app with:
 
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
-This is what is looks like:
+This is what it looks like:
 
 <img src="demo.gif" style="max-height: 400px" />
 

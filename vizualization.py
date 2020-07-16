@@ -5,6 +5,7 @@ mpl_style(dark=False)
 
 import matplotlib.pyplot as plt
 
+
 def plot_probability_distribution(
     probs, actuals, threshold=0.5, plot_title="Predictions for both classes"
 ):
@@ -41,9 +42,9 @@ def plot_probability_distribution(
     ax.set(xlabel="Predicted Probability", ylabel="Density Estimation")
     ax.set(yticklabels=[])
     ax.set_title(plot_title)
-    
+
     # plot dimensions
     ax.set_xlim(0, 1)
     plt.tight_layout()
-    
+
     return ax
