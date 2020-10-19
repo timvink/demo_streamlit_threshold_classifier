@@ -1,3 +1,5 @@
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/timvink/demo_streamlit_threshold_classifier/app.py)
+
 # Using streamlit to set the threshold for a classifier
 
 :notebook: This code accompanies the blog post at https://www.timvink.nl/streamlit-threshold-app/
