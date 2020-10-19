@@ -4,3 +4,4 @@ streamlit>=0.62.1
 pandas>=1.0.4
 numpy>=1.17.2
 scikit_learn>=0.23.1
+ing_theme_matplotlib>=0.1.7
