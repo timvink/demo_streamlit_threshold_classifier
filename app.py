@@ -24,12 +24,12 @@ metrics = get_metrics_df(
 st.dataframe(metrics.assign(hack="").set_index("hack"))
 
 # Plots
-ax = plot_probability_distribution(
+fig, ax = plot_probability_distribution(
     yhat_prob_train, y_train, threshold, "Train predictions"
 )
-st.pyplot(optimize=True)
+st.pyplot(fig)
 
-ax = plot_probability_distribution(
+fig, ax = plot_probability_distribution(
     yhat_prob_test, y_test, threshold, "Test predictions"
 )
-st.pyplot(optimize=True)
+st.pyplot(fig)

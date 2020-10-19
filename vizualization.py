@@ -47,4 +47,4 @@ def plot_probability_distribution(
     ax.set_xlim(0, 1)
     plt.tight_layout()
 
-    return ax
+    return fig, ax
